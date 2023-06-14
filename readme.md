@@ -18,11 +18,12 @@
 * * * * * /bin/bash websign20230614.sh
 ```
 
+​		学校的网其实是每天的三点半断的，所以理论上不需要每分钟执行一次
+
 4.如遇websign20230614.sh: line 1: syntax error near unexpected token `$'{\r''
 
 请执行`sed -i 's/\r$//' websign20230614.sh`
 
-## 后记
+# 后记
 
 这段代码原计划是在Bourne Shell中实现的，以实现更好的兼容性，所以rc4函数的实现方式非常奇怪，但是折腾了一下午还是改成了bash，后续有空会再试试看Bourne Shell的实现
-
