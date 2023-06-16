@@ -24,6 +24,17 @@
 
 请执行`sed -i 's/\r$//' websign20230614.sh`
 
+5.如遇 ./websign20230616.sh: local: line 2: not in a function
+
+也请执行`sed -i 's/\r$//' websign20230616.sh`
+
 # 后记
 
-这段代码原计划是在Bourne Shell中实现的，以实现更好的兼容性，所以rc4函数的实现方式非常奇怪，但是折腾了一下午还是改成了bash，后续有空会再试试看Bourne Shell的实现
+~~这段代码原计划是在Bourne Shell中实现的，以实现更好的兼容性，所以rc4函数的实现方式非常奇怪，但是折腾了一下午还是改成了bash，后续有空会再试试看Bourne Shell的实现~~
+
+查了一下openwrt默认集成的是Almquist shell，因此0616版实现了Almquist shell的直接运行，现在可以将计划任务改成
+
+```
+* * * * * websign20230616.sh
+```
+
