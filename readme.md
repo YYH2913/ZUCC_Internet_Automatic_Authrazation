@@ -30,7 +30,6 @@
 
 # 后记
 
-~~这段代码原计划是在Bourne Shell中实现的，以实现更好的兼容性，所以rc4函数的实现方式非常奇怪，但是折腾了一下午还是改成了bash，后续有空会再试试看Bourne Shell的实现~~
 
 查了一下openwrt默认集成的是Almquist shell，因此0616版实现了Almquist shell的直接运行，现在可以将计划任务改成
 
@@ -38,3 +37,5 @@
 * * * * * websign20230616.sh
 ```
 
+20231122update
+实现了BusyBox v1.24.2 built-in shell (ash)下脚本的运行支持，后续随缘更新啦（虽然本来也随缘╮(￣⊿￣)╭
